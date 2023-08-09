@@ -1,6 +1,8 @@
 * {
  margin:0;
  padding:0;
+ font-family: 'Roboto', sans-serif;
+ box-sizing: border-box;
 }
 
 nav {
@@ -8,66 +10,195 @@ nav {
     color: #03264C;
     background-size: contain;
 }
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 45%;
+}
+.top form {
+    margin: 10px;
+    position: relative;
+    width: 45%;
+}
+.top input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.top form button {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    border: none;
+    background-color: #fffefcfd;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.fa-bars{
+    color: #fffefcfd;
+    font-size: 32px;
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 5px;
+}
+.burguer-menu {
+    text-align: center;
+   padding: 15px 0;
+}
+.medio {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img {
+    width: 100%;
+}
 main {
     background-color: #ebebeb;
-    display: block;
-    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detalle {
+    border-top: 1px solid  #ebebeb;
+    padding: 15px 15px;
+    display: flex;
 }
 .Apartado {
     color: #666;
     font-size: 24px;
 }
-body {
-    font-family: 'Roboto', sans-serif;;
-    font-size: 12px;
-}
-
-.card img {
-    width: 50%;
-    padding: 15px;
-    margin: 10px;
-    border-top: 1px solid #ebebeb;
-    border: 15px;
-}
-.Precio {
+.precio {
     font-size: 18px;
+    width: 30%;
 }
-.Detalle {
+.descuentos .descripcion {
+ font-size: 16px;
+}
+.descuentos {
+    color: #39b54a;
+    width: 70%;
+}
+.descripcion {
+    color: #666;
+}
+.camion {
+    position: relative;
+}
+.fa-truck {
+    color: #39b54a;
+    display: block;
     font-size: 16px;
-    line-height: 22px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fffefcfd;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
-.fa-bars{
+.card {
+    width: 80%;
+    margin: 10px;
+    border: 1px solid #b1b1b1;
+    background-color: #fffefcfd;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     text-align: center;
-    color: #fffefcfd;
-    background-color: #1259c3;
-    padding: 10px;
-    border-radius: 5px;
-
 }
-.burguer-menu {
-    text-align: center;
-   
+.card img {
+    width: 90%;
+    padding: 15px;
 }
-.icon{
+.icon {
     color: #1259c3;
-    text-align: center;
     font-size: 2em;
     margin-bottom: 10px;
 }
-
-main {
+.pie {
     text-align: center;
-    
+    color: #666;
+    padding: 15px 40px;
 }
-
-.banner img{
-    width: 100%;
-    ;
+.pie p {
+    font-size: 12px;
+}
+.pie h3 {
+    font-size: 14px;
+}
+.bottom {
+    display: none;
+}
+.descripcion {
+    padding-bottom: 15px;
 }
 
 @media (min-width:361px) {
-  /*tablets*/
+   .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+    width: 40%;
+    height: auto;
+}
+.card img {
+    width: 90%;
+}
+.burguer-menu {
+    display: none;
+}
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.bottom ul {
+    display: flex;
+    margin: 10px;
+}
+.bottom li {
+    font-size: 14px;
+    margin: 10px;
+}
+.bottom i {
+    margin-left: 5px;
+}
 }
 @media (min-width:769px) {
-  /*desktop*/  
+  .logo {
+    max-width: 300px;
+    margin-right: 20px;
+  }  
+  .top {
+    flex-wrap: nowrap;
+  }
+  .medio {
+    width: 30%; 
+  }
+  .card {
+    max-width: 200px;
+  }
 }
