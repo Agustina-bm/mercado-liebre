@@ -26,7 +26,7 @@ nav {
 .top form {
     margin: 10px;
     position: relative;
-    width: 45%;
+    width: 50%;
 }
 .top input {
     border: none;
@@ -95,7 +95,7 @@ main {
     font-size: 18px;
     width: 30%;
 }
-.descuentos .descripcion {
+.descuentos, .descripcion {
  font-size: 16px;
 }
 .descuentos {
