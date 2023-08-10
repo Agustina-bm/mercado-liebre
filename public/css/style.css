@@ -76,6 +76,7 @@ nav a {
 }
 main {
     background-color: #ebebeb;
+    display: flex;
 }
 .container {
     display: flex;
@@ -155,6 +156,15 @@ main {
 }
 .descripcion {
     padding-bottom: 15px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    background-color: hsl(0, 2%, 63%);
+    justify-content: center;
+    padding: 20px;
 }
 
 @media (min-width:361px) {
